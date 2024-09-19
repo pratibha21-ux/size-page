@@ -1,0 +1,207 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.modal-title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.size-chart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.size-chart-table th,
+.size-chart-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: rgb(39, 37, 37);
+}
+
+.size-chart-table th {
+    background-color: #f4f4f4;
+}
+
+.close-button {
+    margin-top: 10px;
+    font-size: 2.0rem;
+    margin-bottom: 600px;
+    padding: 10px 20px;
+    background-color: #4e4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.close-button:hover {
+    background-color: #2980b9;
+}
+
+.cart-page {
+    padding: 20px;
+}
+
+.cart-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+}
+
+.size-chart-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 412px) {
+    .modal-overlay {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        transition: opacity 0.3s ease;
+    }
+    .modal-container {
+        background-color: white;
+        width: 140%;
+        max-width: 160%;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        max-height: 90vh;
+    }
+    .close-button {
+        font-size: 1.0rem;
+        margin-bottom: 300px;
+        padding: 1px 15px;
+        background-color: #4e4d4d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-container {
+        max-width: 600px;
+        padding: 15px;
+        margin-left: 40px;
+    }
+    .modal-title {
+        font-size: 1.8rem;
+    }
+    .size-chart-table th,
+    .size-chart-table td {
+        padding: 15px;
+    }
+    .close-button {
+        font-size: 1.0rem;
+        margin-bottom: 300px;
+        padding: 1px 15px;
+        background-color: #4e4d4d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-container {
+        max-width: 400px;
+        padding: 10px;
+        margin-left: 40px;
+    }
+    .modal-title {
+        font-size: 1.6rem;
+    }
+    .size-chart-table th,
+    .size-chart-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .close-button {
+        font-size: 1.0rem;
+        margin-bottom: 390px;
+        padding: 1px 15px;
+        background-color: #4e4d4d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        float: right;
+    }
+}
+
+@media (max-width: 360px) {
+    .modal-overlay {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        transition: opacity 0.3s ease;
+    }
+    .modal-container {
+        max-width: 400px;
+        padding: 10px;
+        margin-left: 13px;
+    }
+    .modal-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .size-chart-table th,
+    .size-chart-table td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    .close-button {
+        font-size: 1.0rem;
+        margin-bottom: 350px;
+        padding: 1px 1px;
+        background-color: #4e4d4d;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        float: right;
+    }
+}
